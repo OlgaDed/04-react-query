@@ -12,16 +12,34 @@
   transition: transform 0.2s;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .image {
   width: 100%;
-  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
   display: block;
+}
+
+.title {
+  font-size: 14px;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
 }
 
 .title {
