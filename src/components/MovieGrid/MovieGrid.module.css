@@ -12,7 +12,7 @@
   transition: transform 0.2s;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #1a1a1a;
+  position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,21 +29,15 @@
 }
 
 .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-size: 14px;
   margin: 0;
-  padding: 12px;
+  padding: 12px 8px;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.9);
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.4;
-}
-
-.title {
-  font-size: 14px;
-  margin: 8px 0;
-  text-align: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
+  line-height: 1.3;
 }
