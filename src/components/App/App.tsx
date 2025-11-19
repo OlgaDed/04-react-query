@@ -58,6 +58,9 @@ export default function App() {
       <SearchBar onSubmit={handleSearch} />
 
       {isError && <ErrorMessage />}
+
+      {isLoading && !data && <div>Loading...</div>}
+
       {!isError && movies.length > 0 && (
         <>
           {totalPages > 1 && (
@@ -73,6 +76,7 @@ export default function App() {
               nextLabel="→"
             />
           )}
+
           <MovieGrid movies={movies} onSelect={handleMovieSelect} />
         </>
       )}
